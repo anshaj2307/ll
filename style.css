@@ -1,0 +1,100 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul{
+    list-style-type: none;
+
+}
+nav{
+    background-color: #a149d0;
+    color: #fff;
+    padding: 0 12px;
+    height: 70px;
+    font-size: 27px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.gameContainer{
+    background-color: #a149d0;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.container{
+   display: grid;
+   grid-template-columns: repeat(3, 10vw);
+   grid-template-rows: repeat(3, 10vw);
+   font-family: 'Roboto', sans-serif;
+}
+
+.container div{
+    border: 2px solid #0d0d0d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8vw;
+    color: #fff;
+}
+.box:hover{
+    background-color: #22f4b5;
+    cursor: pointer;
+}
+
+.gameInfo{
+    padding: 0 30px;
+    margin: 30px;
+    color: #fff;
+    margin-top: 0;
+}
+
+
+#reset {
+    margin: 0 23px;
+    padding: 1px 18px;
+    background: #afacab;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Baloo Bhaina 2';
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.line{
+    background-color: black;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    background-color: #911d91;
+    transition: width 1s ease-in-out;
+}
+
+@media screen and (max-width: 950px)
+{
+    .gameContainer{
+        flex-wrap: wrap;
+    }
+    .gameInfo{
+        margin-top: 34px;
+    }
+    .gameInfo h1{
+        font-size: 1.5rem;
+    }
+    .container { 
+        grid-template-rows: repeat(3, 20vw);
+        grid-template-columns: repeat(3, 20vw);
+    }
+}
