@@ -1,1 +1,1 @@
-# This is the Tic Tac Toe game playing between tow players
+# This is the Tic Tac Toe game playing between two players
